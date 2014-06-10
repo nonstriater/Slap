@@ -1,0 +1,27 @@
+Node version: v0.10.21
+
+Cordova version: 0.21.3
+
+Config.xml file: 
+
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.nonstriater.slap" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>狂抽男朋友</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+</widget>
+
+
+No Plugins Currently Installed
+
+iOS platform:
+
+Xcode 5.0.2
+Build version 5A3005
+

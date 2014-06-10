@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<HTML>
+ <HEAD>
+  <TITLE>狂抽男朋友</TITLE>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1; user-scalable=0;"/>
+        <meta name="x5-fullscreen" content="true"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="none"/>
+	<link rel="stylesheet" type="text/css" href="css/popup.css" />
+  <style type="text/css">
+	body{
+		margin:0;
+		padding:0;
+	}
+	#canvas{		
+		position: absolute;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+	.MainPage{
+		background-image:url(resources/images/1.jpg);
+		background-size:100% 100%;
+		background-repeat:no-repeat;
+	}
+	.SpecPage{
+		background-image:url(resources/images/6.jpg);
+		background-size:100% 100%;
+		background-repeat:no-repeat;
+	}
+	.GamePage{
+		background-image:url(resources/images/bg.jpg);
+		background-size:100% 100%;
+		background-repeat:no-repeat;
+	}
+  </style>
+ </HEAD>
+
+ <BODY>
+	<canvas id="canvas" width="320" height="320">
+		unsupport canvas
+	</canvas>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/popup.js"></script>
+	<script type="text/javascript" src="js/gamehub.js"></script>
+	<script type="text/javascript" src="js/slap_min.js" charset="utf-8"></script>
+	<script type="text/javascript">	
+		window.onload = function(){
+			sid = "";
+			Gamehub.Settings.gameName = 'slap';
+			if (typeof StartGame == 'function') {
+				StartGame();
+			}
+			canvas = document.getElementById('canvas');
+			slap = new Slap(canvas);
+			slap.run();
+					
+		};
+	</script>
+	<script type="text/javascript"></script>
+ </BODY>
+</HTML>
